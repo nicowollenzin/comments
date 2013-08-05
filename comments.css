@@ -1,0 +1,26 @@
+body{
+	font-family:sans-serif;
+}
+*{
+	font-size:12pt;
+}
+
+/*FOrm*/
+textarea{
+	width:98%;
+	font-family:sans-serif;
+}
+input{
+	width:32%;
+}
+input[type="submit"]{
+	width:auto;
+}
+
+/*comments*/
+div.comment img{
+	float: left;
+}
+div.comment p{
+	float:right;
+}
