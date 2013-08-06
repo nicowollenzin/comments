@@ -4,7 +4,9 @@ body{
 *{
 	font-size:12pt;
 }
-
+hr{
+	clear:both;
+}
 /*FOrm*/
 textarea{
 	width:98%;
@@ -18,9 +20,7 @@ input[type="submit"]{
 }
 
 /*comments*/
-div.comment img{
-	float: left;
-}
-div.comment p{
-	float:right;
+.comment img{
+	width:50px;
+	height:auto;
 }

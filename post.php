@@ -8,7 +8,7 @@
 <body>
 <?php
 	require_once("config.php");
-	if(isset($_POST['name'], $_POST['comment'])){
+	if(isset($_POST['name'], $_POST['comment'], $_POST['spam-protection']) && $_POST['spam-protection'] == 42){
 		$comment = "
 		<div class='comment'>
 			<img src='http://gravatar.com/avatar/". md5($_POST['mail']) . "'/>
@@ -18,7 +18,7 @@
 		";
 		#echo $comment;
 		chdir($txt_dir);
-		$file = $_POST['id'].".txt";
+		$file = $_POST['id']. ".comment";
 		$handle = fopen($file, "a");
 		fwrite($handle, $comment);
 		fclose($handle);
