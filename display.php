@@ -14,7 +14,7 @@
 	chdir($txt_dir);
 	if($id != ""){
 		if(file_exists($file)){
-			echo nl2br(file_get_contents($file));
+			readfile($file);
 		}else{
 			echo "Noch keine Kommentare"; 
 			//touch($file);

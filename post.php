@@ -12,8 +12,8 @@
 		$comment = "
 		<div class='comment'>
 			<img src='http://gravatar.com/avatar/". md5($_POST['mail']) . "'/>
-			<span class='name'>". $_POST['name'] . "</span>
-			<p>". htmlspecialchars($_POST['comment']) . "</p>
+			<span class='name'>". htmlspecialchars($_POST['name']) . "</span>
+			<p>". nl2br(htmlspecialchars($_POST['comment'])) . "</p>
 		</div>
 		";
 		#echo $comment;
