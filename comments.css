@@ -6,15 +6,17 @@ body{
 }
 hr{
 	clear:both;
+	border:none;
+	border-bottom:1px solid black;
 }
 /*FOrm*/
 textarea{
 	width:98%;
 	font-family:sans-serif;
 }
-input{
+/*input{
 	width:32%;
-}
+}*/
 input[type="submit"]{
 	width:auto;
 }
