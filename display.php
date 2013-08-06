@@ -14,9 +14,10 @@
 	chdir($txt_dir);
 	if($id != ""){
 		if(file_exists($file)){
-			readfile($file);
+			echo nl2br(file_get_contents($file));
 		}else{
-			touch($file);
+			echo "Noch keine Kommentare"; 
+			//touch($file);
 		}
 	}else{
 		exit("Sorry. But THIS went wrong.");
